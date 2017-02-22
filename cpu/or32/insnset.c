@@ -1111,6 +1111,10 @@ INSTRUCTION (l_fl1) {
   
   SET_PARAM0 (0 == t ? t : 33 - t);
 }
+INSTRUCTION (l_adrp) {
+  SET_PARAM0(((cpu_state.pc >> 13) + PARAM1) << 13);
+}
+
 /******* Floating point instructions *******/
 /* Do calculation, and update FPCSR as required */
 /* Single precision */

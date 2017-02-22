@@ -1,3 +1,8 @@
+2017-02-22  Richard Henderson  <rth@twiddle.net>
+
+	* cpu/or32/or32.c (or1ksim_or32_opcodes): Add l.adrp.
+	* cpu/or32/insnset.c (l_adrp): New.
+
 2014-05-04  Stefan Kristiansson  <stefan.kristiansson@saunalahti.fi>
 
 	* cpu/common/abstract.c:

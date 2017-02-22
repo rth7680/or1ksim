@@ -91,6 +91,8 @@ CONST struct or32_opcode or1ksim_or32_opcodes[] = {
    EF (l_j), OR32_IF_DELAY, it_jump},
   {"l.jal", "N", "00 0x1  NNNNN NNNNN NNNN NNNN NNNN NNNN",
    EF (l_jal), OR32_IF_DELAY, it_jump},
+  {"l.adrp", "rD,N", "00 0x2  DDDDD NNNNN NNNN NNNN NNNN NNNN",
+   EF (l_adrp), 0, it_arith},
   {"l.bnf", "N", "00 0x3  NNNNN NNNNN NNNN NNNN NNNN NNNN",
    EF (l_bnf), OR32_IF_DELAY | OR32_R_FLAG, it_branch},
   {"l.bf", "N", "00 0x4  NNNNN NNNNN NNNN NNNN NNNN NNNN",
